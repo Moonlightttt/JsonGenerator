@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace JsonCleaner.Helper
+namespace JsonGenerator.Helper
 {
-    public class CleanConfig
+    public class GeneratorConfig
     {
         public string JsonSourceUrl { get; set; }
         public string JsonFilePath { get; set; }

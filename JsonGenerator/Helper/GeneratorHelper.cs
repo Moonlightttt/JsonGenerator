@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace JsonCleaner.Helper
+namespace JsonGenerator.Helper
 {
-    public class CleanTool : IDisposable
+    public class GeneratorHelper : IDisposable
     {
         private static readonly HttpClient _client = new HttpClient();
-        private List<CleanConfig> _cleanerConfigs;
+        private List<GeneratorConfig> _cleanerConfigs;
 
-        public CleanTool(List<CleanConfig> cleanerConfigs)
+        public GeneratorHelper(List<GeneratorConfig> cleanerConfigs)
         {
             _cleanerConfigs = cleanerConfigs;
         }

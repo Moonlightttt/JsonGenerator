@@ -3,13 +3,13 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using JsonCleaner.Helper;
+using JsonGenerator.Helper;
 using Microsoft.Extensions.Configuration;
 
 var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json").Build();
-var cleanerConfig = configuration.GetSection("CleanerConfig").Get<List<CleanConfig>>();
-using (var cleaner = new CleanTool(cleanerConfig))
+var cleanerConfig = configuration.GetSection("CleanerConfig").Get<List<GeneratorConfig>>();
+using (var cleaner = new GeneratorHelper(cleanerConfig))
 {
     await cleaner.ClearAsync();
 }

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonCleaner", "JsonCleaner\JsonCleaner.csproj", "{52B8B813-1F15-4F7B-B3F1-1EB595FEA7F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonGenerator", "JsonGenerator\JsonGenerator.csproj", "{52B8B813-1F15-4F7B-B3F1-1EB595FEA7F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
